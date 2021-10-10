@@ -27,7 +27,7 @@ scissors = '''
 '''
 
 print("What do you want to choose? Type 0 for Rock, 1 for Paper, 2 for Scissors.")
-choice = int(input()) - 1
+choice = int(input())
 choice_list = [rock, paper, scissors]
 pc_choice = random.randint(0, 2)
 print(f'Your choice :\n{choice_list[choice]}')
@@ -38,4 +38,4 @@ if choice == pc_choice:
 elif choice==0 and pc_choice==2 or choice==1 and pc_choice==0 or choice==2 and pc_choice==1:
   print('You WIN!!!')
 else:
-  print('You LOOSE!!!')
+  print('You LOSE!!!')
